@@ -4,14 +4,14 @@
     pageEncoding="ISO-8859-1"%>
 <%
     User auth = (User) request.getSession().getAttribute("auth");
-	if (auth != null) {
-	    response.sendRedirect("index.jsp");
-	}
-	
-	ArrayList<Cart> cart_list = (ArrayList<Cart>) session.getAttribute("cart-list");
-	if (cart_list != null) {
-	    request.setAttribute("cart_list", cart_list);
-	}
+    if (auth != null) {
+        response.sendRedirect("index.jsp");
+    }
+
+    ArrayList<Cart> cart_list = (ArrayList<Cart>) session.getAttribute("cart-list");
+    if (cart_list != null) {
+        request.setAttribute("cart_list", cart_list);
+    }
 %>
 <!DOCTYPE html>
 <html>
@@ -44,6 +44,12 @@
                         <button type="submit" class="btn btn-primary">Register</button>
                     </div>
                 </form>
+
+                <!-- Login Button -->
+                <div class="text-center mt-3">
+				    <button type="button" onclick="location.href='login.jsp'" class="btn btn-link text-primary">Login</button>
+				</div>
+
             </div>
         </div>
     </div>

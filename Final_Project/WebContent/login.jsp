@@ -38,6 +38,11 @@
 						<button type="submit" class="btn btn-primary">Login</button>
 					</div>
 				</form>
+
+                <!-- Register Button -->
+                <div class="text-center mt-3">
+				    <button type="button" onclick="location.href='register.jsp'" class="btn btn-link text-primary">You have no account?</button>
+				</div>
 			</div>
 		</div>
 	</div>
