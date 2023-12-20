@@ -61,6 +61,11 @@
           <warSourceDirectory>WebContent</warSourceDirectory>
         </configuration>
       </plugin>
+        <plugin>
+            <groupId>org.apache.tomcat.maven</groupId>
+            <artifactId>tomcat9-maven-plugin</artifactId>
+            <version>9.0.50</version>
+        </plugin>
     </plugins>
   </build>
 </project>
